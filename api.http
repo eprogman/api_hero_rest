@@ -1,0 +1,15 @@
+
+###Recuperar todos los superheroes
+GET http://localhost:3000/superhero
+
+
+### recuperar superhero por id
+GET http://localhost:3000/superhero/Ajax
+
+### Recuperar por power
+GET http://localhost:3000/superhero?alineacion=bad
+
+### Recuperar con paginación.
+GET http://localhost:3000/superhero?page=38&limit=15
+
+
