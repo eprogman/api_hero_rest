@@ -43,9 +43,10 @@ app.get('/superhero/:name', (req, res) => {
 });
 
 
-const PORT = process.env.PORT ?? 3000
+const databaseUrl = process.env.DATABASE_URL ?? 3000
+
 
 // Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(databaseUrl, () => {
+    console.log(`Server is running on http://localhost:${databaseUrl}`);
 });
