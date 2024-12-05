@@ -11,7 +11,7 @@ app.get('/superhero', (req, res) => {
     //const origin = req.header('origin')
     //res.header('Access-Control-Allow-Origin', origin)
 
-    res.header('Access-Control-Allow-Origin', 'https://leohero.netlify')
+    res.header('Access-Control-Allow-Origin', 'https://leohero.netlify.app')
 
     const { page } = req.query
     const { limit } = req.query
@@ -38,7 +38,7 @@ app.get('/superhero/:name', (req, res) => {
     //const origin = req.header('origin')
     //res.header('Access-Control-Allow-Origin', origin)
 
-    res.header('Access-Control-Allow-Origin', 'https://leohero.netlify')
+    res.header('Access-Control-Allow-Origin', 'https://leohero.netlify.app')
 
     const { name } = req.params
     const superh = superhero.filter(hero => hero.name.toLowerCase().match(name.toLowerCase()))
