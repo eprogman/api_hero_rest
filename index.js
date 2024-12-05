@@ -8,8 +8,9 @@ app.disable('x-powered-by');
 // Use the router in the app
 app.get('/superhero', (req, res) => {
 
-    const origin = req.header('origin')
-    res.header('Access-Control-Allow-Origin', origin)
+    //const origin = req.header('origin')
+    //res.header('Access-Control-Allow-Origin', origin)
+    //res.header('Access-Control-Allow-Origin', 'https://leohero.netlify')
 
     const { page } = req.query
     const { limit } = req.query
@@ -33,8 +34,10 @@ app.get('/superhero', (req, res) => {
 
 app.get('/superhero/:name', (req, res) => {
 
-    const origin = req.header('origin')
-    res.header('Access-Control-Allow-Origin', origin)
+    //const origin = req.header('origin')
+    //res.header('Access-Control-Allow-Origin', origin)
+
+    //res.header('Access-Control-Allow-Origin', 'https://leohero.netlify')
 
     const { name } = req.params
     const superh = superhero.filter(hero => hero.name.toLowerCase().match(name.toLowerCase()))
