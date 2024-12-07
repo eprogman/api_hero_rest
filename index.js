@@ -1,5 +1,5 @@
 const express = require('express');
-const superhero = require('./superhero.json')
+const superhero = require('./JSON/superhero.json')
 
 const app = express();
 app.use(express.json())
